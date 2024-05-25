@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 20px;
+  gap: 15px;
+  box-shadow: 0px 0px 22px -1px rgba(0, 0, 0, 0.75);
+  background-color: #932af5;
+  color: white;
+}
+
+.comic-container img {
+  border-radius: 4px;
+  height: 450px;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px;
+  width: 650px;
+  background-color: white;
+}
+
+.button {
+  height: 40px;
+  width: 200px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.comprar {
+  background-color: #25d366;
+}
+
+.comprar:hover {
+  background-color: #1ba84f;
+}
+
+.carrito {
+  background-color: #9b51e0;
+}
+
+.carrito:hover {
+  background-color: #932af5;
+}
+
+.volver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: rgb(87, 87, 87);
+}
+
+.volver:hover {
+  background-color: rgb(41, 41, 41);
+}
+
+.comic-info {
+  max-width: 800px;
+}
+
+@media (width <= 768px) {
+  .comic-container {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .comic-info {
+    width: 90%;
+  }
+
+  .comic-info h2 {
+    width: 95%;
+  }
+  .btn-container {
+    width: 95%;
+  }
+
+  .comic-container img {
+    height: 350px;
+  }
+}
