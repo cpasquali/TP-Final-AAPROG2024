@@ -14,7 +14,7 @@ const adultVerification = () => {
 const adultMinor = () => {
   avisoEl.className = "d-none";
   mainEl.className = "main-content";
-  alert("Entraras bajo su responsabilidad");
+  alert("ENTRADA BAJO RESPONSABILIDAD PERSONAL");
 };
 
 buttonAdult.addEventListener("click", adultVerification);
