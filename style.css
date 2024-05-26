@@ -30,8 +30,8 @@ html {
 }
 
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -178,6 +178,18 @@ tbody tr:hover {
 
 .closed {
   color: red;
+}
+
+@media (width <= 1024px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (width <= 640px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (width <= 436px) {
