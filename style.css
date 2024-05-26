@@ -1,3 +1,7 @@
+.alert-open {
+  height: 100vh;
+}
+
 body,
 html {
   margin: 0;
@@ -196,4 +200,15 @@ tbody tr:hover {
   .error {
     font-size: 14px;
   }
+}
+
+.alert-open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.alert {
+  width: 200px;
 }
