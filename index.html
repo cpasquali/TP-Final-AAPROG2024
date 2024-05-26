@@ -70,8 +70,8 @@
         </div>
       </div>
       <main class="d-none" id="main">
-        <div class="cards-container">
-          <div class="card" style="width: 18rem">
+        <section class="cards-container">
+          <article class="card" style="width: 18rem">
             <img
               src="./images/DD-Masterworks.png"
               class="card-img-top"
@@ -86,8 +86,8 @@
                 >Ver Producto</a
               >
             </div>
-          </div>
-          <div class="card" style="width: 18rem">
+          </article>
+          <article class="card" style="width: 18rem">
             <img
               src="./images/MARVEL-Thedefenders.png"
               class="card-img-top"
@@ -104,8 +104,8 @@
                 >Ver Producto</a
               >
             </div>
-          </div>
-          <div class="card" style="width: 18rem">
+          </article>
+          <article class="card" style="width: 18rem">
             <img
               src="./images/TASM-Masterwork.png"
               class="card-img-top"
@@ -122,8 +122,8 @@
                 >Ver Producto</a
               >
             </div>
-          </div>
-          <div class="card" style="width: 18rem">
+          </article>
+          <article class="card" style="width: 18rem">
             <img
               src="./images/MARVEL-Masterworks.png"
               class="card-img-top"
@@ -140,8 +140,8 @@
                 >Ver Producto</a
               >
             </div>
-          </div>
-          <div class="card" style="width: 18rem">
+          </article>
+          <article class="card" style="width: 18rem">
             <img
               src="./images/XMEN.png"
               class="card-img-top"
@@ -156,8 +156,8 @@
                 >Ver Producto</a
               >
             </div>
-          </div>
-          <div class="card" style="width: 18rem">
+          </article>
+          <article class="card" style="width: 18rem">
             <img
               src="./images/F4.png"
               class="card-img-top"
@@ -174,8 +174,26 @@
                 >Ver Producto</a
               >
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
+        <section class="envios">
+          <h2>Calculemos su envio 😎</h2>
+          <p>
+            (Si vive en un rango de 40kms de distancia de San Nicolas el envio
+            es gratis!!)
+          </p>
+          <section class="input-container">
+            <select class="button" id="citys" name="citys">
+              <option>San Nicolas</option>
+              <option>Villa Ramallo</option>
+              <option>Rosario</option>
+              <option>Villa Campi</option>
+              <option>Mendoza</option>
+            </select>
+            <button id="btn-envio" class="button">Calcular</button>
+          </section>
+          <h1 id="res-envio"></h1>
+        </section>
       </main>
       <footer class="footer bg-marvel-red">
         COPYRIGHT El Rincon del Nerd &copy; 2002-2024

@@ -212,3 +212,17 @@ tbody tr:hover {
 .alert {
   width: 200px;
 }
+
+.envios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  gap: 20px;
+}
+
+.input-container {
+  display: flex;
+  gap: 20px;
+}
