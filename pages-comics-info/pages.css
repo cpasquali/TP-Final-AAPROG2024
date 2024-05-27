@@ -5,6 +5,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../images/istockphoto-1138010090-612x612.png");
 }
 
 .comic-container {
@@ -75,7 +76,7 @@ body {
   max-width: 800px;
 }
 
-@media (width <= 768px) {
+@media (max-width: 768px) {
   .comic-container {
     flex-direction: column;
     width: 90%;

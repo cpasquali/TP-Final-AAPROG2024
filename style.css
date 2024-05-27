@@ -5,13 +5,28 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/istockphoto-1138010090-612x612.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .navbar {
@@ -30,6 +45,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.596);
 }
 
 .cards-container {
@@ -48,7 +64,6 @@ body {
   align-items: center;
   justify-content: center;
   height: 50px;
-  margin-top: 10px;
 }
 
 .card {
@@ -105,10 +120,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.596);
+  color: black;
 }
 
 .horarios {
+  margin-top: 10px;
+  width: 400px;
   margin-top: 20px;
 }
 
@@ -118,6 +137,7 @@ table {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 thead {
@@ -137,14 +157,16 @@ tbody tr:nth-child(odd) {
 
 td:first-child {
   font-weight: bold;
+  background-color: #f2f2f2;
 }
 
 td:last-child {
   font-style: italic;
+  background-color: #f2f2f2;
 }
 
-tbody tr:hover {
-  background-color: #ddd;
+td:hover {
+  background-color: #fd9c9c;
 }
 
 .consulta-container {
@@ -206,6 +228,8 @@ tbody tr:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
+  background-color: rgba(121, 121, 121, 0.651);
 }
 
 .alert {
@@ -217,11 +241,26 @@ tbody tr:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin-top: 10px;
+  margin-bottom: 0;
   gap: 20px;
+  background-color: rgba(255, 255, 255, 0.685);
+  width: 100%;
 }
 
 .input-container {
   display: flex;
   gap: 20px;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.596);
+  height: 100vh;
+  color: black;
+}
+
+.consulta-container {
+  margin: 30px;
 }
