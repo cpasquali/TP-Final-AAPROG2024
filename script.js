@@ -36,7 +36,11 @@ const calculateShipping = () => {
   ) {
     totalEnvio = 0;
     mensaje = "Su envio es gratis!!";
-  } else if ((citysEl.value === "Rosario") | (citysEl.value === "Mendoza")) {
+  } else if (
+    (citysEl.value === "Rosario") |
+    (citysEl.value === "Mendoza") |
+    (citysEl.value === "Buenos Aires")
+  ) {
     totalEnvio = 800;
     mensaje = "El total de su envio es de 800 pesos";
   }
